@@ -1,0 +1,81 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Trang chủ - Dụng Cụ Thể Thao";
+}
+
+<div class="hero-banner text-center mb-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold text-warning">DỤNG CỤ THỂ THAO CHÍNH HÃNG</h1>
+        <p class="lead mb-4">Chuyên cung cấp thiết bị tập luyện chất lượng cao, độ bền vượt trội cho mọi bộ môn</p>
+        <a href="#products" class="btn btn-warning btn-lg fw-bold px-4">MUA NGAY HÔM NAY</a>
+    </div>
+</div>
+
+<div class="container mb-5" id="products">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 class="fw-bold text-dark border-start border-4 border-warning ps-3">DANH SÁCH SẢN PHẨM NỔI BẬT</h3>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-outline-dark active">Tất cả</button>
+            <button type="button" class="btn btn-outline-dark">Bóng đá</button>
+            <button type="button" class="btn btn-outline-dark">Cầu lông</button>
+            <button type="button" class="btn btn-outline-dark">Gym & Yoga</button>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        <!-- Sản phẩm 1 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm card-product">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2">HOT</span>
+                <img src="https://images.unsplash.com/photo-1614632537197-38a17061c2bd?q=80&w=400" class="card-img-top" alt="Quả bóng đá" style="height: 200px; object-fit: cover;">
+                <div class="card-body d-flex flex-column text-center">
+                    <h5 class="card-title fw-bold">Quả Bóng Đá Động Lực FIFA</h5>
+                    <p class="card-text text-muted small">Chất liệu da PU cao cấp, bám sân cực tốt</p>
+                    <p class="text-danger fw-bold fs-5 mb-3">350.000 VNĐ</p>
+                    <button class="btn btn-primary mt-auto w-100"><i class="fa-solid fa-cart-plus me-1"></i> Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm card-product">
+                <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=400" class="card-img-top" alt="Vợt cầu lông" style="height: 200px; object-fit: cover;">
+                <div class="card-body d-flex flex-column text-center">
+                    <h5 class="card-title fw-bold">Vợt Cầu Lông Yonex Astrox</h5>
+                    <p class="card-text text-muted small">Khung Carbon siêu nhẹ, trợ lực đập cầu</p>
+                    <p class="text-danger fw-bold fs-5 mb-3">1.250.000 VNĐ</p>
+                    <button class="btn btn-primary mt-auto w-100"><i class="fa-solid fa-cart-plus me-1"></i> Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm card-product">
+                <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?q=80&w=400" class="card-img-top" alt="Thảm Yoga" style="height: 200px; object-fit: cover;">
+                <div class="card-body d-flex flex-column text-center">
+                    <h5 class="card-title fw-bold">Thảm Tập Yoga Định Tuyến TPE</h5>
+                    <p class="card-text text-muted small">Dày 6mm, chống trơn trượt tuyệt đối</p>
+                    <p class="text-danger fw-bold fs-5 mb-3">280.000 VNĐ</p>
+                    <button class="btn btn-primary mt-auto w-100"><i class="fa-solid fa-cart-plus me-1"></i> Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sản phẩm 4 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm card-product">
+                <span class="badge bg-success position-absolute top-0 start-0 m-2">NEW</span>
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=400" class="card-img-top" alt="Tạ tay" style="height: 200px; object-fit: cover;">
+                <div class="card-body d-flex flex-column text-center">
+                    <h5 class="card-title fw-bold">Bộ Tạ Tay Điều Chỉnh 20kg</h5>
+                    <p class="card-text text-muted small">Chất liệu gang bọc cao su bền bỉ</p>
+                    <p class="text-danger fw-bold fs-5 mb-3">850.000 VNĐ</p>
+                    <button class="btn btn-primary mt-auto w-100"><i class="fa-solid fa-cart-plus me-1"></i> Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
